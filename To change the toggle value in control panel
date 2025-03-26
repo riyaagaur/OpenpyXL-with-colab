@@ -1,0 +1,8 @@
+from openpyxl import load_workbook
+
+wb = load_workbook("2024.06 - Project Force_Retention Analysis_v01.xlsx")
+ws = wb["Control Panel"]  
+
+ws["C24"] = 2
+
+wb.save("project force.xlsx")
